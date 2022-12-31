@@ -9,3 +9,5 @@ console.log(student.firstName); // Monica
 // change(set) object property using a setter
 student.changeName = 'Sarah';
 console.log(student.firstName); // Sarah
+
+Object.defineProperty(obj, prop, descriptor)
