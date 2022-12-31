@@ -22,4 +22,10 @@
 
 
 var a=Symbol('ok')
-console.log(a)
+a='b'
+console.log(typeof a)
+
+let x
+console.info(x);
+
+
