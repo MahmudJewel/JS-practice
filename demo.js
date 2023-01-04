@@ -11,4 +11,8 @@
 // console.log(person1.gender); // Male
 // console.log(person2.gender); // Male
 
-console.info([]==[])
+// console.info([]==[])
+
+a='3'
+b=a+5+6
+console.log(typeof b)
