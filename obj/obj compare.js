@@ -9,7 +9,8 @@ const comp = (a, b) => {
     }
 };
 
-a = { k: 1 };
-b = { k: 1 };
+a = { k: 1, k2:2 };
+b = { k: 1, k2:2 };
+// b = { k: 1 };
 console.log(comp(a,b))
 
