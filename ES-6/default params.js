@@ -9,7 +9,6 @@
 function test(x = 1) {
   console.log(x);
 }
-
 // passing undefined
 // takes default value 1
 test(undefined); // 1
