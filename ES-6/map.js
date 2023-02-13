@@ -36,11 +36,35 @@
 // map1.set("info", { name: "Jack", age: "26" });
 // console.log(map1.size); // 1
 
-// 07-iterate through Map
-let map1 = new Map();
-map1.set("name", "Jack");
-map1.set("age", "27");
-// looping through Map
-for (let [key, value] of map1) {
-  console.log(key + "- " + value);
-}
+// // 07-iterate through Map
+// let map1 = new Map();
+// map1.set("name", "Jack");
+// map1.set("age", "27");
+// // looping through Map
+// for (let [key, value] of map1) {
+//   console.log(key + "- " + value);
+// }
+
+// // weak map 
+// const weakMap = new WeakMap();
+// console.log(weakMap); // WeakMap {} 
+// let obj = {};
+// // adding object (element) to WeakMap
+// weakMap.set(obj, 'hello');
+// console.log(weakMap.get(obj)); // WeakMap {{} => "hello"}
+
+// weakmap methods 
+const weakMap = new WeakMap();
+console.log(weakMap); // WeakMap {} 
+let obj = {};
+// adding object (element) to WeakMap
+weakMap.set(obj, 'hello');
+console.log(weakMap); // WeakMap {{} => "hello"}
+// get the element of a WeakMap
+console.log(weakMap.get(obj)); // hello
+// check if an element is present in WeakMap
+console.log(weakMap.has(obj)); // true
+// delete the element of WeakMap
+console.log(weakMap.delete(obj)); // true
+console.log(weakMap); // WeakMap {}
+
